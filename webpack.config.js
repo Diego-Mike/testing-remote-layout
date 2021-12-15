@@ -6,7 +6,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8081/"
-        : "https://testing-remote-layout-diego-mike.vercel.app/",
+        : "https://testing-remote-layout.vercel.app/",
   },
 
   devServer: {
