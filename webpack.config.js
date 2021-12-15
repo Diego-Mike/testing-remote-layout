@@ -3,8 +3,10 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:8081/",
-    // : "https://prod-test-consumer.vercel.app/"+
+    publicPath:
+      argv.mode === "development"
+        ? "http://localhost:8081/"
+        : "https://testing-remote-layout-diego-mike.vercel.app/",
   },
 
   devServer: {
@@ -47,7 +49,7 @@ module.exports = (_, argv) => ({
       name: "layout",
       filename: "remoteEntry.js",
       exposes: {
-        // "./Layout": "./src/website/Layout",
+        "./Layout": "./src/website/Layout",
       },
       shared: require("./package.json").dependencies,
     }),
