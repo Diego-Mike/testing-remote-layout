@@ -47,7 +47,7 @@ module.exports = (_, argv) => ({
       name: "layout",
       filename: "remoteEntry.js",
       exposes: {
-        "./Layout": "./src/website/Layout",
+        // "./Layout": "./src/website/Layout",
       },
       shared: require("./package.json").dependencies,
     }),
