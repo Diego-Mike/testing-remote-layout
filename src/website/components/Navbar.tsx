@@ -56,7 +56,7 @@ const Navbar: FC<ILayoutProps> = ({ username }) => {
                 width: "100px",
                 height: "40px",
                 marginLeft: "20px",
-                backgroundImage: `url(/Assets/images/brand.svg)`,
+                backgroundImage: `url(../Assets/images/brand.svg)`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
               }}
@@ -132,7 +132,7 @@ const Navbar: FC<ILayoutProps> = ({ username }) => {
                   position: "relative",
                   width: "31px",
                   height: "31px",
-                  backgroundImage: `url(/Assets/images/suite.svg)`,
+                  backgroundImage: `url(../Assets/images/suite.svg)`,
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
