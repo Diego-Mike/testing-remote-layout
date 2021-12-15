@@ -9,9 +9,6 @@ module.exports = (_, argv) => ({
 
   devServer: {
     port: 8081,
-    historyApiFallback: {
-      index: "index.html",
-    },
   },
 
   entry: "./src/website",
